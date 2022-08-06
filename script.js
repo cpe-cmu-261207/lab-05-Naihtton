@@ -5,6 +5,7 @@ inputAdd.onkeyup = (event) => {
   if (event.key !== "Enter") return;
   if (inputAdd.value == "") {
     alert("Todo cannot be emty");
+    return;
   }
   //your code here
   addTodo(inputAdd.value, false);
